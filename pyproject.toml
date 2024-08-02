@@ -1,0 +1,52 @@
+[project]
+name = "sourcegraph"
+version = "0.0.1"
+description = "Convert GitHub Repo Into Graph"
+authors = [
+    { name = "Ransaka", email = "ransaka.ravihara@gmail.com" }
+]
+dependencies = [
+    "streamlit==1.29.0",
+    "networkx~=3.2.1",
+    "matplotlib~=3.8.4"
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">= 3.9.7, <=3.12"
+keywords = ["Python","NetworkX"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Code = "https://github.com/Ransaka/sourcegraph"
+Docs = "https://github.com/Ransaka/sourcegraph"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.pytest.ini_options]
+addopts = "-p no:warnings"
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+line_length = 120
+
+[tool.flake8]
+max-line-length = 120
+
+[tool.mypy]
+ignore_missing_imports = true
+disallow_untyped_defs = true
+disallow_untyped_calls = true
+disallow_incomplete_defs = true
