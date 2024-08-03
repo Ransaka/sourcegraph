@@ -1,6 +1,6 @@
 import networkx as nx
 import matplotlib.pyplot as plt
-from utils import repo_to_graph, get_all_dependent_functions
+from .utils import repo_to_graph, get_all_dependent_functions
 
 
 class Sourcegraph:

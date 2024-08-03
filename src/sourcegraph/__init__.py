@@ -1,1 +1,1 @@
-from source_graph import Sourcegraph
+from .source_graph import Sourcegraph
