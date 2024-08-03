@@ -1,12 +1,11 @@
 [project]
 name = "sourcegraph"
-version = "0.0.4"
+version = "0.0.5"
 description = "Convert GitHub Repo Into Graph"
 authors = [
     { name = "Ransaka", email = "ransaka.ravihara@gmail.com" }
 ]
 dependencies = [
-    "streamlit==1.29.0",
     "networkx~=3.2.1",
     "matplotlib~=3.8.4"
 ]
