@@ -1,6 +1,6 @@
 [project]
 name = "sourcegraph"
-version = "0.0.3"
+version = "0.0.4"
 description = "Convert GitHub Repo Into Graph"
 authors = [
     { name = "Ransaka", email = "ransaka.ravihara@gmail.com" }
